@@ -8,6 +8,7 @@
   "scripts": {
     "build": "nest build",
     "db:migrate": "npx typeorm-ts-node-commonjs migration:run -d src/db/data-source.ts",
+    "db:migrate:create": "npx typeorm migration:create",
     "db:migrate:revert": "npx typeorm-ts-node-commonjs migration:revert -d src/db/data-source.ts",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
